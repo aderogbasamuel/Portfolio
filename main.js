@@ -39,5 +39,45 @@ var body=document.querySelector('.firstpage');
 body.scrollTop=body.scrollHeight;
 console.log('working')
 }
-function yh(){
+
+var bod=document.querySelector('body');
+var totop=document.querySelector('.top');
+
+
+window.addEventListener('scroll', () => {
+      if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+       // totop.style.transform="translateY(0vh)";
+       totop.classList.add('bottom')
+      }
+      else {
+       // totop.style.transform="translateY(-100vh)";
+       totop.classList.remove('bottom')
+       
+      }
 }
+)
+totop.addEventListener('click', () => {
+  document.body.scrollTop = 0
+  document.documentElement.scrollTop = 0
+})
+const back1 = document.querySelector('.back1');
+const back2 = document.querySelector('.back2');
+
+
+
+/*window.addEventListener('scroll', () => {
+ // if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+    //back1.classList.add('activeback1');
+    //back2.classList.add('activeback1')
+    
+ // }
+var h=document.body.scrollHeight;
+ var z=document.documentElement.scrollTop;
+// h=10;
+
+var rot=(z/h)*360;
+ back1.style.transform='rotate('+rot+'deg)'
+// alert('scrollll')
+console.log(rot);
+})
+*/

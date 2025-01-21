@@ -5,7 +5,7 @@
   font-family: sofia;
   text-transform: capitalize;
   border: red 0px solid;
-  transition: 2px;
+  /*transition: 2s;*/
  /* border: red 1px solid;*/
 }
 html{
@@ -15,26 +15,52 @@ body {
     font-size: 15pt;
     background: #0B0C10;
 }
+body .top{
+  position: fixed;
+  background: #1F2833;
+  color: #fff;
+  font-size: 50px;
+  z-index: 10;
+  padding: 0px 20px;
+  border-radius: 5px;
+ /* bottom: 0px;*/
+  right: 10px;
+  transform: translateX(-100vh);
+  rotate: 90deg;
+  font-family: normal;
+  transition: 0.5s ease-in-out;
+  
+}
+body .bottom{
+  /*bottom: 50px;*/
+  transform: translateX(86vh);
+  transition: 0.5s ease-in-out;
+}
 .body{
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
 }
 .back1{
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: #1F2833;
+  background: #1F283300;
   z-index: -1;
   margin: -20px 0 0 -20px;
   position: fixed;
-  animation: back 3s infinite ease-in-out
+  transition: 1s ease-in-out;
+
+  /*animation: back 3s infinite ease-in-out;*/
+  border: dashed 25px #059563;
 }
 @keyframes back{
   0%,100%{
-    transform: translate(0);
-    
+   /* transform: translate(0);*/
+    transform: rotate(0deg)
   }
   50%{
-    transform: translate(50px);
+    /*transform: translate(50px);*/
+    transform: rotate(180deg);
+
     margin-top: 70px
   }
 }
@@ -42,20 +68,22 @@ body {
   width: 250px;
   height: 250px;
   border-radius: 50%;
-  background: #03443D;
+  background: #03443D00;
   z-index: -1;
   bottom: -20px;
   right: -20px;
   position: fixed;
-  animation: back2 3s infinite ease-in-out
+  transition: 1s ease-in-out;
+  border: dashed 25px #04851A;
+  /*animation: back2 3s infinite ease-in-out*/
 }
 @keyframes back2{
   0%,100%{
-    transform: translate(0);
+    transform: /*translate(0)*/rotate(0deg);
     
   }
   50%{
-    transform: translate(-50px);
+    transform: /*translate(-50px)*/rotate(180deg);
     margin-bottom: 70px;
   }
 }
@@ -506,7 +534,14 @@ footer{
   background: #EFEFEF8F;
   color: #fff;
   padding: 10px;
-  text-align: center
+  text-align: center;
+  margin: 0px
+}
+
+body .activeback1{
+ animation: none;
+  transition: 1s ease-in-out;
+  transform: translateX(0px)
 }
 
 
@@ -515,4 +550,36 @@ footer{
 
 
 
+.back1,.back2{
+    animation: appear linear;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-timeline: view();
+    animation-range: entry 0% cover 300%;
+}
+@keyframes appear{
+  from{
+     rotate: 500deg;
+  }
+  to{
+    rotate: 0px;
 
+
+  }
+}
+.socials{
+  background: #000;
+  border: #fff 2px solid;
+  border-radius: 100px;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 10px
+}
+.socials img{
+  width: 40px;
+  filter: invert(1)
+}
