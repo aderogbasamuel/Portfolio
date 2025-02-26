@@ -89,7 +89,7 @@ header .logo{
    width: 50px;
    height: 50px;
    background: #000000;
-   border-radius: 1000px;
+   border-radius: 10px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -576,7 +576,7 @@ text-decoration: none
   }
 }
 footer{
-  background: #EFEFEF8F;
+  background: #000000;
   color: #fff;
   padding: 10px;
   text-align: center;
@@ -596,18 +596,67 @@ body .activeback1{
 
 
 
-.socials{
-  background: #000;
-  border: #fff 2px solid;
-  border-radius: 100px;
-  width: 80px;
-  height: 80px;
-  align-items: center;
-  justify-content: center;
+
+.contact{
   display: flex;
-  margin: 10px
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+  align-items: center
+}
+.mail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.mail textarea{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  min-height: 100px
+}
+.mail h1{
+  color: #fff;
+  font-family: normal1;
+  padding: 10px;
+  font-size: 30px;
+}
+.mail button{
+  border-radius: 2px;
+  background: var(--color);
+  padding: 10px 30px;
+  font-size: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+.socials{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  width: 100%;
 }
 .socials img{
-  width: 40px;
-  filter: invert(1)
+  width: 70px;
+}
+.socials .x{
+  filter: invert(1);
+  padding: 15px;
+}
+.socials li{
+  display: flex;
+  color: #fff;
+  align-items: center
+}
+.socials p{
+  font-size: 20px;
+  font-weight: 900
+}
+@media screen and (min-width:420px) {
+  .contact{
+    flex-direction: row;
+  }
+  
 }
