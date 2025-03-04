@@ -406,10 +406,21 @@ text-decoration: none
   width: 100%;
   padding: 15px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .projects .navigate a {
   color: #fff;
-  text-decoration: none
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 3px
+}
+.projects .navigate a p{
+  padding-top: 5px
 }
 /*project styling ends here*/
 
@@ -450,7 +461,6 @@ text-decoration: none
   borer: #FFFFFF94 3px solid;
   margin: 20px
 }
-
 .places .cominfo {
   display: flex;
   align-items: center;
@@ -638,8 +648,14 @@ body .activeback1{
   padding: 0px;
   width: 100%;
 }
-.socials img{
+.socials img,.socials svg{
   width: 70px;
+}
+.socials .gitl{
+  width: 60px;
+  height: 60px;
+  padding-left: 10px;
+  margin-right: 10px
 }
 .socials .x{
   filter: invert(1);
