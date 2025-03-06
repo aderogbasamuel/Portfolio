@@ -217,6 +217,26 @@ header h1{
   width: 100%;
   justify-content: center;
 }
+.mine .myimg{
+  overflow: hidden;
+  transition: 3s;
+  width: 200px;
+  margin: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.mine .myimg .my_pic {
+  width: 100%;
+  
+  transition: 2s
+}
+.mine .myimg:hover .my_pic{
+  transform: scale(1.2);
+  overflow: hidden;
+}
 .border1{
   width: 70px;
   margin-left: 0;
@@ -250,15 +270,7 @@ border-bottom-right-radius: 5px;
   font-size: 30px;
   font-weight: 100;
 }
-.my_pic{
-  width: 200px;
-  margin: 20px;
-  margin-top: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px
-}
+
 .go{
   background: #535353;
   height: 50px;
