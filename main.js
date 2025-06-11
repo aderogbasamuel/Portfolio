@@ -32,6 +32,19 @@ var no=1;
 */
 //chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
 
+
+function openNav() {
+  document.querySelector(".dark-overlay").style.width = "100%";
+}
+
+function closeNav() {
+  document.querySelector(".dark-overlay").style.width = "0%";
+}
+
+
+
+
+
 document.querySelector('.go').onclick=()=>{
 //body.scrollTo({ top: body.scrollHeight, behavior: "smooth" });
 var body=document.querySelector('.firstpage');
@@ -81,3 +94,4 @@ var rot=(z/h)*360;
 console.log(rot);
 })
 */
+
