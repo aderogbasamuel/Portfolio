@@ -94,4 +94,19 @@ var rot=(z/h)*360;
 console.log(rot);
 })
 */
+function setContent(content) {
+    const educationTab = document.querySelector('#education');
+    const workTab = document.querySelector('#work');
 
+    if (content === "work") {
+        workTab.classList.add('active');
+        educationTab.classList.remove('active');
+    } 
+    else if (content === "education") {
+        educationTab.classList.add('active');
+        workTab.classList.remove('active');
+    }
+    else {
+        console.error("Unknown tab:", content);
+    }
+}

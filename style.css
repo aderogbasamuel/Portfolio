@@ -67,10 +67,10 @@ body {
 }
 .overlay p{
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.34);
-padding-bottom: 30px;
+padding-bottom: 20px;
 font-size: 18px;
 color: #9D9D9D;
-padding-left: 20px;
+padding-left: 15px;
 }
 .overlay-content {
   position: relative;
@@ -94,11 +94,11 @@ padding-left: 20px;
   padding-left: 15px;
 }
 .overlay a i{
-  color: var(--primary);
+  color: #fff;
   font-size: 40px;
 }
 .overlay a:hover, .overlay a:focus {
-  color: var(--primary);
+  color: #fff;
 }
 
 .overlay .socials {
@@ -133,7 +133,7 @@ padding-left: 20px;
   font-size: 60px;
   color: #aaa;
   text-decoration: none;
-  padding: 20px;
+  padding: 10px;
   font-family: clash;
   font-weight: 300;
   padding-left: 30px;
@@ -227,13 +227,13 @@ header .logo{
   border-radius: 100px;
   aspect-ratio: 1/1;
 }
-header h1{
+header h3{
   font-family: poppins;
   font-weight: 600;
   padding: 0px;
   margin-left: 0px;
   color: #000000;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 header .x{
@@ -283,8 +283,8 @@ header .x svg{
 .firstpage .buttons button{
   background: var(--color);
   color: #fff;
-  padding: 10px 15px;
-  font-size: 18px;
+  padding: 5px 10px;
+  font-size: 15px;
   border-radius: 10px;
   font-weight: 600;
 }
@@ -292,12 +292,12 @@ header .x svg{
   background: rgba(230, 255, 230, 1);
   color: rgba(15, 255, 0, 1);
   border-radius: 100px;
-  padding: 15px 15px;
+  padding: 10px 10px;
   font-weight: 600;
   display: flex;
   align-items: center;
   gap: 5px;
-  font-size: 18px;
+  font-size: 15px;
 }
 .firstpage .buttons .available .dot{
   width: 10px;
@@ -553,6 +553,33 @@ p.sub-head{
   border-radius: 20px
 }
 
+
+.toogle{
+  display: flex;
+  color: #000000;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.toogle .texts{
+  display: flex;
+  background: #fff;
+  width: 80%;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
+.toogle .texts .work{
+  width: 50%;
+  text-align: center;
+  padding: 10px 20px;
+}
+.toogle .texts .work.active{
+  background: var(--color);
+  color: #fff;
+  border-radius: 100px;
+}
 
 /*place styling*/
 .section{
