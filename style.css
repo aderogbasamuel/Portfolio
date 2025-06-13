@@ -19,6 +19,32 @@
   font-family: salad;
   src: url(/fonts/hellohoney.otf);
 }
+.cursor {
+    z-index: 999;
+    position: fixed;
+    background: var(--color);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px var(--color),
+        0 0 60px var(--color),
+        0 0 100px var(--color);
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: 1s;
+  }
+  .cursor:before {
+    content: '';
+    position: absolute;
+    background: var(--color);
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+  }
+
 :root{
   --color1: #F1F4FF;
   --color: #0070FF;
@@ -26,6 +52,15 @@
   --color2: rgba(0, 112, 255, 0.1);
   
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Following Circles */
+
 html{
   scroll-behavior: smooth
 }
