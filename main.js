@@ -32,8 +32,11 @@ var no=1;
 }
 */
 //chatBody.scrollTo({ top: chatBody.scrollHeight, behavior: "smooth" });
-
-
+document.querySelectorAll('.overlay-content a').forEach(link => {
+  link.addEventListener('click', () => {
+    closeNav();
+  });
+});
 function openNav() {
   document.querySelector(".dark-overlay").style.width = "100%";
 }

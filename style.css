@@ -7,6 +7,10 @@
   border: red 0px solid;
  border: red 0px solid;
 }
+a{
+  color: #fff;
+  text-decoration: none;
+}
 @font-face {
   font-family: poppins;
   src: url(fonts/Poppins-Regular.ttf);
@@ -79,7 +83,7 @@ body {
   padding: 10px 0px;
 }
 .overlay {
-  width: 80%;
+  width: fit-content;
   top: 0;
   left: 0;
   height: 100%;
@@ -102,10 +106,11 @@ body {
 }
 .overlay p{
   border-bottom: 1.5px solid rgba(255, 255, 255, 0.34);
-padding-bottom: 20px;
 font-size: 18px;
 color: #9D9D9D;
-padding-left: 15px;
+padding:0px 15px;
+padding-bottom: 20px;
+
 }
 .overlay-content {
   position: relative;
@@ -302,6 +307,17 @@ header .x svg{
   font-family: clash;
   margin-left: -1px;
 }
+#about{
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width:420px) {
+  #about{
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+  }
+}
 .about-me{
   font-family: poppins;
   color: #DEF1FF;
@@ -313,7 +329,7 @@ header .x svg{
   gap: 10px;
   justify-content: flex-start;
   width: 100%;
-  padding: 0px 30px;
+  padding-top: 30px;
 }
 .firstpage .buttons button{
   background: var(--color);
@@ -557,6 +573,7 @@ p.sub-head{
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 15px;
 }
 .projects .navigate li:nth-child(2){
   background: transparent;
@@ -964,6 +981,12 @@ outline: none;
   margin-top: 30px;
   padding: 30px;
 }
+@media screen and (min-width:420px) {
+  #contact,.support{
+    padding: 10px 80px;
+  }
+}
+
 .support h1{
   font-family: clash;
 }
