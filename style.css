@@ -130,7 +130,7 @@ padding-bottom: 20px;
   font-weight: 500;
   display: flex;
   gap: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
   padding-left: 15px;
 }
 .overlay a i{
@@ -163,7 +163,7 @@ padding-bottom: 20px;
   align-items: center;
 }
 .overlay .socials a i{
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .overlay .socials a:hover {
@@ -313,7 +313,7 @@ header .x svg{
 }
 @media screen and (min-width:420px) {
   .dos{
-    padding: 10px 40px;
+    margin: 10px 40px;
     font-size: 50px;
   }
   #about{
