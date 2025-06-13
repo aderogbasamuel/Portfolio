@@ -503,7 +503,8 @@ p.sub-head{
 @media screen and (min-width:420px) {
   .projects{
     flex-direction: row;
-    gap: 15px
+    gap: 15px;
+    flex-wrap: wrap;
   }
   .projects .projectcard{
     width: 33.3333%;
