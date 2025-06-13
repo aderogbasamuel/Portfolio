@@ -518,6 +518,7 @@ p.sub-head{
   height: 100%;
   border-radius: 10px;
   transition: 1s;
+  transform: scale(1.12);
 }
 .projectcard:hover img{
   transform: scale(1.2)
