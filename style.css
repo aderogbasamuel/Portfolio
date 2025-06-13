@@ -539,10 +539,10 @@ p.sub-head{
   display: flex;
   gap: 10px;
   padding: 20px 0px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .projects .technology{
-  padding: 5px 15px;
+  padding: 5px 10px;
   color: var(--color);
   background: rgba(0, 112, 255, .1);
   border-radius: 100px;
@@ -561,6 +561,7 @@ p.sub-head{
   width: 100%;
   gap: 10px;
   padding-bottom: 20px;
+  
 
 }
 .projects .navigate li{
