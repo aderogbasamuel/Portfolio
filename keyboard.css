@@ -24,7 +24,7 @@ body{
 }
 #keyboard {
 	display: flex;
-	height: 20vh;
+	height: 15vh;
 	justify-content: flex-end;
 }
 .keyboard,

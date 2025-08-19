@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Aderogba Samuel Adeolu</title>
+  <link rel="stylesheet" href="stars.css" type="text/css" media="all" />
   <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="box.css" type="text/css" media="all" />
@@ -15,13 +16,23 @@
 <link rel="stylesheet" href="keyboard.css" type="text/css" media="all" />
 </head>
 <body class="dark-theme">
-  <div class="bg"></div>
+  <div class="bg">
+
+				<div class="bg-animation">
+					<div id='stars'></div>
+					<div id='stars2'></div>
+					<div id='stars3'></div>
+					<div id='stars4'></div>
+				</div><!-- / STAR ANIMATION -->
+
+			</div>
+</div>
   <div class="cursor"></div>
   <div class="dark-overlay">
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <h1>My Portfolio</h1>
-      <p>Aderogba Samuel•Frontend Dev</p>
+      <h2>My Portfolio</h2>
+      <p>Aderogba Samuel</p>
       <div class="overlay-content">
       
     <a href="#"><i data-feather="home"></i> Home</a>
@@ -394,6 +405,34 @@ View Demo
 
   </div>
   </div>
+    <div class="project-card">
+    <div class="project-img">
+    <img src="images/project images /blitztix.png" alt="project1"/>
+         <div class="overlay">
+                            <a href="#"><i class="fas fa-eye"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+
+    </div>
+    <div class="project-content">
+          <div class="tags">
+      <span class="tag">Html</span>
+      <span class="tag">Tailwind</span>
+      <span class="tag">Js</span>
+
+    </div>
+
+    <h3 class="projectname">Blitztix Landing Page</h3>
+    <p class="projectdesc">A Web App <Built></Built> to order african products where they are not available.</p>
+        <a href="https://blitztix.pxxl.live" class="btn">
+          <svg class="w-[24px] h-[24px] text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"/>
+</svg>
+View Demo
+</a>
+
+  </div>
+  </div>
 
 
   </div>
@@ -494,9 +533,7 @@ ogun, Nigeria.</li>
     
   <div class="section-title">
     
-<h2 id="head">
-   Skills
-</h2>
+<h2 id="head">Skills</h2>
 <p class="sub-head">I specialize in these technologies and continuously expand my expertise</p>
   </div>
 
@@ -674,12 +711,16 @@ ogun, Nigeria.</li>
 
 </section>
 
-<div class="support">
-  
+<section class="support">
+  <div class="container">
+      
 <h2>Do You Like What I Do?</h2>
 <p class="sub-head">If you like what I do you can support me, so i can get necessary tools to keep moving forward</p>
+
 <button type="submit"><a href="https://sendmefunds-sam.vercel.app/">Send Me A Gift 🎁</a></button>
-</div>
+  </div>
+
+</section>
 
 <footer>
   <p>Copyright &copy; 2025 Aderogba Samuel</p>
